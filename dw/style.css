@@ -1,0 +1,38 @@
+body {
+    font-family: sans-serif;
+    padding: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #aaa;
+    padding: 8px;
+}
+
+.urgente {
+    color: red;
+    font-weight: bold;
+}
+
+.msg {
+    font-size: 18px;
+    color: #666;
+    margin-top: 20px;
+}
+
+button, select, input {
+    padding: 6px;
+    margin-top: 6px;
+}
+
+.hidden {
+    display: none;
+}
+
+nav button {
+    margin-right: 10px;
+}

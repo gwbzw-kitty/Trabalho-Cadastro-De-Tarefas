@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Sistema de Tarefas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body onload="carregarTarefas()">
+
+<h2>Controle de Tarefas</h2>
+
+<nav>
+    <button onclick="mostrar('lista')">Lista</button>
+    <button onclick="mostrar('cadastro')">Cadastrar</button>
+</nav>
+
+<div id="lista">
+    <h3>Tarefas cadastradas</h3>
+    <div id="areaLista"></div>
+</div>
+
+<div id="cadastro" class="hidden">
+    <h3>Cadastrar nova tarefa</h3>
+
+    <label>Prioridade</label>
+    <select id="prioridade">
+        <option value="">Selecione</option>
+        <option value="Baixa">Baixa</option>
+        <option value="Normal">Normal</option>
+        <option value="Urgente">Urgente</option>
+    </select>
+
+    <br>
+
+    <label>Descrição</label>
+    <input id="descricao">
+
+    <br>
+
+    <label>Local</label>
+    <input id="local">
+
+    <br>
+
+    <label>Data Limite</label>
+    <input id="data">
+
+    <br>
+
+    <label>Matrícula</label>
+    <input id="matricula">
+
+    <br><br>
+
+    <label>Recursos</label>
+    <input id="recursoTemp">
+    <button onclick="addRecurso()">Adicionar</button>
+
+    <ul id="listaRecursos"></ul>
+
+    <button onclick="salvarTarefa()">Salvar tarefa</button>
+</div>
+
+<script src="script.js"></script>
+
+</body>
